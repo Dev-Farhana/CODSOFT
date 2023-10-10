@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(100deg, #00539C, #8A307F );
+    height: 80vh;
+}
+ h1{ 
+    text-transform: capitalize;
+     color: #ee783e;
+    font-size: 60px;
+    margin-left: 24%;
+    margin-top: 20px;
+} 
+.main{
+    width: 400px;
+    height: 440px;
+    margin: 40px auto;
+    border: 6px solid #EEA47F;
+    filter: drop-shadow(16px 16px 10px  );
+    filter: brightness(2px);
+    border-radius: 14px;
+    cursor: pointer;
+}
+input{
+    width: 380px;
+    height: 60px;
+    filter: drop-shadow(none);
+    background-color: #103a5c;
+    color: #EEA47F;
+    font-size: 28px;
+    font-weight: bold;
+    border-radius: 14px;
+    outline: none;
+    text-align: center;
+    border: 3px solid #8A307F;
+}
+.main .nums table {
+    height: 30px;
+    width: 240px;
+    margin: 6px ;
+    color: #EEA47F;
+    font-size: 40px;
+    font-weight: 600;
+    -webkit-text-stroke: 2px #EEA47F;
+}
+.main .nums table td{
+    border: 3px solid #8A307F;
+    padding: 8px;
+    text-align: center;
+}
+.main .nums table td:hover{
+    background-color: pink;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.main .operators table {
+    height: 10px;
+    width: 80px;
+    margin: 6px ;
+    color: #EEA47F;
+    font-size: 45px;
+    font-weight: 600;
+    -webkit-text-stroke: 2px #EEA47F;
+}
+.main .operators table td{
+    border: 3px solid #00539C;
+    /* padding: 2px; */
+    text-align: center;
+    background-color: pink;
+}
+.main .operators table td:hover{
+    background-color: transparent;
+}
