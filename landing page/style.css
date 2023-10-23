@@ -1,0 +1,210 @@
+ @import url('https://fonts.googleapis.com/css2?family=Ruthie&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100%;
+    font-family: cursive;
+}
+.gift-box h2{
+    font-size: 4vw;
+}
+h2{
+    font-family: 'Ruthie', cursive;
+    font-size: 6vw;
+    font-weight: 600;
+}
+.nav-bar img{
+    width: 60px;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content{
+    list-style: none;
+}
+.flex p{
+    text-align: start;
+    color: royalblue;
+    font-size: larger;
+}
+.content li{
+    padding: 10px;
+    text-align: left;
+    font-size: large;
+}
+/* .content li::before{
+    content: "✓";
+} */
+.box{
+    border-radius: 10px;
+    box-shadow: 2px 10px 10px ;
+}
+.boxHov:hover{
+    box-shadow: 2px 20px 20px gray;
+}
+.gift-box{
+    width: 100%;
+    height: 400px;
+}
+
+.lunch{
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmuip8sXXZv6WTcwtM--jsUFOmpybe4cTsUg&usqp=CAU');
+    background-size: cover;
+    /* background-size: 100%; */
+    background-repeat: no-repeat;
+    width: 100%;
+     color: aliceblue;
+}
+
+/* CSS */
+.button-20 {
+  background-color: #4D4AE8;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, .15), rgba(255, 255, 255, 0));
+  border: 1px solid #4D4AE8;
+  border-radius: 1rem;
+  box-shadow: rgba(255, 255, 255, 0.15) 0 1px 0 inset,rgba(46, 54, 80, 0.075) 0 1px 1px;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: .5rem 1rem;
+  touch-action: manipulation;
+}
+
+.button-20:focus {
+  background-color: #413FC5;
+  border-color: #3E3BBA;
+  box-shadow: rgba(255, 255, 255, 0.15) 0 1px 0 inset, rgba(46, 54, 80, 0.075) 0 1px 1px, rgba(104, 101, 235, 0.5) 0 0 0 .2rem;
+}
+
+.button-20:active {
+  background-color: #3E3BBA;
+  background-image: none;
+  border-color: #3A38AE;
+  box-shadow: rgba(46, 54, 80, 0.125) 0 3px 5px inset;
+} 
+
+/* CSS */
+.button-87 {
+  margin: 10px;
+  padding: 15px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  display: block;
+  border: 0px;
+  font-weight: 700;
+  box-shadow: 0px 0px 14px -7px #f09819;
+  background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-87:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+/* CSS */
+.button-91 {
+  color: #fff;
+  padding: 15px 25px;
+  background-color: #38D2D2;
+  background-image: radial-gradient(93% 87% at 87% 89%, rgba(0, 0, 0, 0.23) 0%, transparent 86.18%), radial-gradient(66% 66% at 26% 20%, rgba(255, 255, 255, 0.55) 0%, rgba(255, 255, 255, 0) 69.79%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: inset -3px -3px 9px rgba(255, 255, 255, 0.25), inset 0px 3px 9px rgba(255, 255, 255, 0.3), inset 0px 1px 1px rgba(255, 255, 255, 0.6), inset 0px -8px 36px rgba(0, 0, 0, 0.3), inset 0px 1px 5px rgba(255, 255, 255, 0.6), 2px 19px 31px rgba(0, 0, 0, 0.2);
+  border-radius: 14px;
+  font-weight: bold;
+  font-size: 16px;
+  border: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  cursor: pointer;
+}
+
+.bn13 {    
+    display: inline-block;
+    padding: 0.65em 1.6em;
+    border: 3px solid #ffffff;
+    margin: 4em 0.3em 0.3em 24em;
+    border-radius: 0.2em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    color: #ffffff;
+    text-align: center;
+    transition: all 0.2s;
+    animation: bn13bouncy 5s infinite linear;
+    position: relative;
+}
+  
+.bn13:hover {
+    background-color: white;
+    color: #000000;
+}
+  
+  @keyframes bn13bouncy {
+    0% {
+      top: 0em;
+    }
+    40% {
+      top: 0em;
+    }
+    43% {
+      top: -0.9em;
+    }
+    46% {
+      top: 0em;
+    }
+    48% {
+      top: -0.4em;
+    }
+    50% {
+      top: 0em;
+    }
+    100% {
+      top: 0em;
+    }
+  }
+
+.bt {
+    box-shadow: 0 0 0 .1em inset var(--c); 
+    --_g: linear-gradient(var(--c) 0 0) no-repeat;
+    background: 
+      var(--_g) calc(var(--_p,0%) - 100%) 0%,
+      var(--_g) calc(200% - var(--_p,0%)) 0%,
+      var(--_g) calc(var(--_p,0%) - 100%) 100%,
+      var(--_g) calc(200% - var(--_p,0%)) 100%;
+    background-size: 50.5% calc(var(--_p,0%)/2 + .5%);
+    border: 0;
+    transition: background-size .4s, background-position 0s .4s;
+  }
+.bt:hover {
+    --_p: 100%;
+    transition: background-position .4s, background-size 0s;
+  }
+
+@media (min-width:200px) and (max-width:790px) {
+  .wrap{
+    flex-wrap: wrap;
+  }
+  .bn13{
+    margin: 4em 0.3em 0.3em 8em;
+  }
+  .nav-bar{
+    gap: 10px;
+
+  }
+} 
