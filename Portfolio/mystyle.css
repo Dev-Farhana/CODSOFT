@@ -1,0 +1,314 @@
+  @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One:ital@1&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One:ital@1&family=Dancing+Script:wght@600&family=Lobster&family=Pacifico&family=Satisfy&display=swap');
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.header {
+    height: 100vh;
+    width: 100%;
+    min-height: 600px;
+}
+  
+.header .logo{
+    text-decoration: none;
+    font-size: 2rem;
+    color: #444;
+    position: relative;
+    left: 4%;
+    text-shadow: 0 2px 4px #000;
+    -webkit-text-stroke: 3px #444 ;
+    font-family: 'Dancing Script', cursive;
+}
+.header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: -webkit-linear-gradient(bottom, #fff 0%, rgba(105, 90, 166, 0.35) 99%, rgba(105, 90, 166, 0.5) 100%);
+    background-image: linear-gradient(to top, #fff 0%, rgba(105, 90, 166, 0.35) 99%, rgba(105, 90, 166, 0.5) 100%);
+}
+.header .header-content {
+    margin-top: 20px;
+    flex-grow: 1;
+    max-width: 550px;
+    font-family: 'Satisfy', cursive;
+}
+  
+.header .header-content .header-title .up {
+    font-size: 5rem;
+    color: #444;
+    margin-bottom: 5px;
+    position: relative;
+    display: block;
+    font-family: 'Lobster', sans-serif;
+    font-size: 30px;
+    text-shadow: 3px 3px 3px #ababab;
+}  
+.header .header-content .header-title .down {
+    font-size: 4rem;
+    margin-bottom: 0;
+    position: relative;
+    display: block;
+    font-family: 'Pacifico', cursive;
+    text-shadow: 3px 3px 3px #ababab;
+    color: #444;
+}
+  
+.header .header-content .header-subtitle {
+    font-size: 1.8rem;
+    letter-spacing: 8px;
+    opacity: .8;
+    margin-top: -10px;
+    margin-bottom: 20px;
+    font-size: 40px;  
+    font-family: 'Lobster', sans-serif;
+}
+  
+.header .header-content .btn {
+    position: relative;
+    margin-top: 20px;
+    border-radius: 20px;
+    padding: 8px 15px;
+}
+
+ul.social-links li {
+    display: inline-block;
+}
+ul.social-links li a {
+    padding: 5px;
+     background-color: #212529;  
+}
+ul.social-links li.label {
+    font-size: 20px;
+    opacity: 0.6;
+    font-weight: 400;
+}
+ul.social-links li a img {
+    max-height: 30px;
+}
+.header .main .nav{
+    display:flex ;
+    flex-direction: column;
+    margin-top: -26%;
+    margin-left: 80%;
+    line-height: 3rem;
+    font-weight: 800;
+    cursor: pointer;
+} 
+.main .nav .item a{
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+    text-shadow: 4px 4px 4px #aaa;
+    font-family: 'Satisfy', cursive;
+}
+.main .nav:hover .item a{
+    cursor: pointer;
+    border-bottom: 3px solid #37a7ff;
+    width: 40px;
+    background-color: #000;
+}
+.main .nav .item {
+    cursor: pointer;
+    border-bottom: 3px solid #37a7ff;
+    width: 40px;
+}
+
+/* sections */
+.section {
+    width: 100%;
+    height: 100%;
+}  
+.section .section-subtitle {
+    margin-bottom: 6px;
+    font-weight: 400;
+    opacity: .6;
+}
+.about {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding: 70px 10px;
+    font-family: 'Lobster', sans-serif;
+    color: #37324b;
+}  
+.about-img-holder {
+    min-width: 400px;
+    max-width: 400px;
+    margin-right: 20px;
+}
+  
+.about-img-holder .about-img {
+    width: 100%;
+    margin-bottom: 15px;
+}
+  
+  @media (max-width: 767.98px) {
+    .about {
+              flex-direction: column;
+      text-align: center;
+    }
+    .about-img-holder {
+      max-width: 220px;
+      min-width: 100%;
+      width: 100%;
+      margin: auto;
+      margin-bottom: 20px;
+    }
+  }
+
+.section .section-title {
+    font-size: 2rem;
+    font-family: 'Satisfy', cursive;
+    color: #37324b;
+}
+
+/*/ portfolio wrapper */
+.portfolio-card {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    font-family: 'Alumni Sans Collegiate One', sans-serif;
+}
+  
+.portfolio-card .portfolio-card-img {
+    width: 100%;
+}
+  
+.portfolio-card .portfolio-card-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: linear-gradient(to top, #e1dfed 0%, rgba(225, 223, 237, 0.7) 99%, rgba(225, 223, 237, 0.8) 100%);
+    transition: all, 0.3s;
+    border-radius: 50%;
+    visibility: hidden;
+}
+    
+.portfolio-card .portfolio-card-overlay .portfolio-card-caption {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+  
+.portfolio-card:hover .portfolio-card-overlay {
+    opacity: 1;
+    visibility: visible;
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+}
+  
+  @media (max-width: 767.98px) {
+    .portfolio-card {
+      margin-bottom: 30px;
+    }
+    .service-card {
+      margin-bottom: 30px;
+    }
+  }
+  
+/* Pricing card */
+.pricing-wrapper {
+    display: flex;
+    padding: 5px 8px;
+}
+  
+.pricing-wrapper .pricing-card {
+    display: block;
+    border: 1px solid #dee2e6;
+    padding: 30px 15px;
+    flex-grow: 1;
+    flex-basis: 0;
+    background: #fff;
+    transition: all, 0.3s;
+}
+.pricing-wrapper .pricing-card-header .pricing-card-icon {
+    width: 70px;
+    margin-bottom: 25px;
+}
+  
+.pricing-wrapper .pricing-card-footer {
+    margin: 15px 0;
+}
+  
+.pricing-wrapper .pricing-card-footer span {
+    font-size: 1.4rem;
+    font-weight: 600;
+    opacity: .8;
+    font-family: 'Pacifico', cursive;
+}
+  
+.pricing-wrapper .pricing-card-footer span:first-child {
+    position: relative;
+    right: -6px;
+    top: -6px;
+    font-size: 2rem;
+}
+  
+.pricing-wrapper .pricing-card-title {
+    margin-bottom: 15px;
+    font-size: 3rem;
+    font-family: 'Dancing Script', cursive;
+}
+  
+.pricing-wrapper .pricing-card-list p {
+    margin-bottom: 12px;
+    font-weight: 500;
+    opacity: .6;
+    font-family: 'Pacifico', cursive;
+}
+    
+.pricing-wrapper .pricing-card:hover {
+    transform: translateY(-5px);
+    border-radius: 0 !important;
+}  
+      
+/* Contact Banner */
+.contact-banner {
+    background: url(./assets/imgs/bg-pat.png) #664fee repeat;
+    color: #fff;
+    padding: 3em;
+    margin-top: 2em;
+    font-family: 'Satisfy', cursive;
+}
+  
+/* Footer */
+.footer {
+    background-color: #37324b;
+    padding: 2em;
+}
+.footer h1 {
+    font-weight: 600;
+    font-size: 3em;
+    color: #a3a1ac;
+    margin-bottom: 2em;
+    font-family: 'Lobster', sans-serif;
+}
+.footer h1 span {
+    color: #fff;
+    font-weight: 300;
+    font-family: 'Alumni Sans Collegiate One', sans-serif;
+}
+.footer h1:after {
+    content: '';
+    width: 80px;
+    height: 4px;
+    background-color: #37a7ff;
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translate(-40px, 10px);
+}
+.footer ul.social-links li a img {
+    max-height: 40px;
+}
+
+  
